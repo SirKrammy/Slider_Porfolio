@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+
+#slider{
+	width:1366px;
+	height:911px;
+	overflow:hidden; 
+}
+
+#slider img{
+	width:1366px;
+	height:911px;
+	float:left;
+}

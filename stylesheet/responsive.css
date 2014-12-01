@@ -1,0 +1,144 @@
+
+
+/*
+CSS: Responsive CSS
+Created by: Mark Alvin Guardion
+*/
+
+@charset "utf-8";
+
+/*Viewport Group
+- this is an example of a linked metadata via css
+----------------------*/
+ @viewport {
+	width: 320px; /* set the default screensize (metadata property) width = 320 */ 
+	zoom: 1.0; /* set the initial scaling to 100%  (metadata property) initial-scale = 1.0 */
+	user-zoom: zoom; /* set the set scalability to true  (metadata property)  user-scalable = yes */
+ }
+ 
+ /* commonly used for responsive design */
+  @viewport {
+	width : extend-to-zoom 100%; /* (metadata property) width = device-width */
+	zoom : 1.0;  /* (metadata property) initial scale = 1.0 */
+ }
+/* @end */
+
+/* HTML Group
+----------------------*/
+html {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	line-height: 1.5; /* Default font-size = 24px */
+	background: url(../images/grids/960_grid_12_col.png) repeat-y top center;
+		
+}
+/* @end */
+
+/* Reset Group 
+	-removes all margins and padding for all html text/paragraph tags
+	-removes anchortag's underline style
+	-removes list-style to none
+------------------- */
+* { margin: 0; 	padding: 0;	}
+a{	text-decoration: none; }
+ul,ol { list-style: none; }
+
+/* @end */
+
+/* Image Group
+ - set images to fluid image - adjusts the image depending on the width of the screen.
+------------------- */
+img {
+	max-width: 100%;	
+	vertical-align: middle;		
+}
+/* @end */
+
+/* Title Group 
+	-default line-height is 48px (3em). em is the advisable unit for responsive design.
+	-in order to make an smooth textflow, we need to define the lineheight.
+*/
+
+
+h1{
+	font-size: 3em; /* 48px */
+	line-height: 1; /* 1行分：48px */
+}
+h2 {
+	font-size: 2.25em; /* 36px */
+	line-height: 1.3333; /* 1行分：48px */
+}
+h3{
+	font-size: 1.5em; /* 24px */	
+	line-height: 1; /* 1行分：24px */	
+}
+h4, h5, h6 {
+	font-size: 1em; /* 16px */	
+	line-height: 1.5; /* 1行分：24px */	
+}
+/* @end */
+
+/* Block Margins 
+ - it is a good way to practice to add a margin on only to the top or bottom of a block and the opposite side is by default 0; in such manner we
+ could handle the layout more efficiently instead of adjusting both top and bottom margins.
+ */
+ 
+ #box01{
+	 margin-bottom: 40px;
+ }
+ #box02 {
+	margin-bottom: 20px; 
+ }
+ /* @end */
+
+
+/* Header Group
+------------------- */
+header{
+	padding-top: 24;
+	text-align: center;
+	width: 100%;
+}
+
+header ul{}
+header ul li{
+	float: left;
+	width: 25%;
+}
+/* @end */
+
+/* Main Group
+------------------- */
+#main {
+	text-align: center;
+	width: 100%;
+}
+/* @end */
+
+/* Contents Group 
+------------------- */
+#contents{
+	text-align: center; 
+	width:100%;
+}
+/* @end */
+
+/* Footer Group 
+------------------- */
+footer{
+	text-align: center; 
+}
+/* @end */
+
+/*Screensize
+ - applies CSS below depending on the screensize
+-----------------------------------------------*/
+@media screen and (min-width : 768px ) {
+/* 768px ~ 1023pxCSSを記述 */
+	
+}
+
+@media screen and (min-width : 1024px ) {
+/* 1024px aboveCSSを記述*/
+
+}
